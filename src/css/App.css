@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.wrap {
+  padding: 20px;
+  background-color: black;
+}
+
+.wrap3 {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.wrap2 {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  display: flex;
+}
+
+.category > h3 {
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5개씩 나열 */
+  gap: 20px; /* 카드 간 간격 */
+}
+
+.movie-card {
+  text-align: center;
+}
+
+.movie-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 5px;
+  margin: 5px 0;
+}
+
+.movie-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.movie-slider-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  width: 80%;
+  overflow: hidden;
+}
+
+.movie-card {
+  text-align: center;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider-button {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.slider-button:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+}
